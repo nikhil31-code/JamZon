@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Product | JamZon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>*{margin:0;padding:0;box-sizing:border-box;}body{background:#0c0c0e;color:#ede9e0;font-family:'Outfit',sans-serif;overflow-x:hidden;}a{text-decoration:none;color:inherit;}ul{list-style:none;}::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:#0c0c0e;}::-webkit-scrollbar-thumb{background:#ff4500;border-radius:3px;}.container{max-width:1200px;margin:0 auto;padding:0 24px;}.btn{display:inline-flex;align-items:center;gap:8px;background:#ff4500;color:#fff;padding:13px 30px;border-radius:40px;font-weight:600;cursor:pointer;transition:all .3s;border:none;box-shadow:0 0 24px rgba(255,69,0,.3);font-family:'Outfit',sans-serif;font-size:.92rem;}.btn:hover{background:#ff7a1a;transform:translateY(-2px);}.section-label{display:inline-flex;align-items:center;gap:8px;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#ff4500;margin-bottom:10px;}.section-label::before{content:'';width:18px;height:1.5px;background:#ff4500;}.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.2rem);letter-spacing:1px;color:#fff;}
+#header{display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:66px;background:rgba(12,12,14,.9);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,.07);position:sticky;top:0;z-index:1000;}.logo{display:flex;align-items:center;gap:10px;}.logo-mark{width:34px;height:34px;background:#ff4500;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 0 18px rgba(255,69,0,.4);}.logo-text{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;}.logo-text span{color:#ff4500;}#navbar{display:flex;align-items:center;gap:2px;}#navbar li a{display:block;padding:7px 13px;border-radius:8px;font-size:.88rem;font-weight:500;color:#6b6b75;transition:.2s;}#navbar li a:hover,#navbar li a.active{color:#fff;background:rgba(255,255,255,.05);}.header-right{display:flex;align-items:center;gap:10px;}.search-bar{display:flex;align-items:center;gap:8px;background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:30px;padding:8px 15px;}.search-bar:focus-within{border-color:#ff4500;}.search-bar i{color:#6b6b75;font-size:.8rem;}.search-bar input{background:transparent;border:none;color:#ede9e0;outline:none;width:170px;font-family:'Outfit',sans-serif;font-size:.85rem;}.search-bar input::placeholder{color:#6b6b75;}.cart-icon{position:relative;width:38px;height:38px;background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#6b6b75;font-size:.88rem;cursor:pointer;}.cart-count{position:absolute;top:-5px;right:-5px;background:#ff4500;color:#fff;font-size:.56rem;font-weight:700;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;}.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;}.ham span{display:block;width:22px;height:2px;background:#ede9e0;border-radius:2px;}.mob-menu{display:none;position:fixed;inset:0;background:rgba(12,12,14,.97);backdrop-filter:blur(24px);z-index:2000;flex-direction:column;align-items:center;justify-content:center;gap:20px;}.mob-menu.open{display:flex;}.mob-menu a{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:3px;color:#ede9e0;transition:.2s;}.mob-menu a:hover{color:#ff4500;}.mob-close{position:absolute;top:20px;right:20px;background:#18181c;border:1px solid rgba(255,255,255,.07);color:#ede9e0;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+.page-hero{padding:80px 0;background:linear-gradient(135deg,#0c0c0e,#1a0500);text-align:center;position:relative;overflow:hidden;}.page-hero::before{content:'';position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(255,69,0,.1),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;}.page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:2px;position:relative;z-index:1;}.page-hero p{color:#6b6b75;font-size:1rem;margin-top:10px;position:relative;z-index:1;}
+#footer{background:#111113;border-top:1px solid rgba(255,255,255,.07);padding:64px 0 0;}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.07);}.footer-brand p{color:#6b6b75;font-size:.86rem;line-height:1.75;margin:14px 0 18px;max-width:240px;}.social-icons{display:flex;gap:9px;}.social-icons a{width:34px;height:34px;background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:.2s;}.social-icons a:hover{background:#ff4500;border-color:#ff4500;color:#fff;}.footer-col h3{font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;color:#fff;}.footer-col ul li{margin-bottom:9px;}.footer-col ul li a{color:#6b6b75;font-size:.86rem;transition:.2s;}.footer-col ul li a:hover{color:#ff4500;}.copyright{display:flex;justify-content:space-between;align-items:center;padding:20px 0;flex-wrap:wrap;gap:10px;}.copyright p{color:#6b6b75;font-size:.8rem;}.copyright a{color:#ff4500;}
+.toast-wrap{position:fixed;bottom:22px;right:22px;display:flex;flex-direction:column;gap:9px;z-index:9990;}.toast{background:#18181c;border:1px solid rgba(255,255,255,.07);border-left:3px solid #ff4500;border-radius:11px;padding:12px 17px;display:flex;align-items:center;gap:10px;font-size:.85rem;box-shadow:0 10px 28px rgba(0,0,0,.5);animation:tIn .3s ease,tOut .4s ease 2.6s forwards;max-width:280px;}@keyframes tIn{from{transform:translateX(110%);opacity:0}to{transform:translateX(0);opacity:1}}@keyframes tOut{to{opacity:0;transform:translateX(110%)}}.toast i{color:#ff4500;}
+.reveal{opacity:0;transform:translateY(24px);transition:.6s ease;}.reveal.in{opacity:1;transform:translateY(0);}
+@media(max-width:1024px){#header{padding:0 22px;}#navbar,.search-bar{display:none;}.ham{display:flex;}.footer-grid{grid-template-columns:1fr 1fr;}}@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
+.breadcrumb{padding:20px 0;display:flex;align-items:center;gap:8px;font-size:.83rem;color:#6b6b75;}.breadcrumb a{color:#6b6b75;transition:.2s;}.breadcrumb a:hover{color:#ff4500;}.breadcrumb span{color:#ede9e0;}
+.product-detail{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:40px 0 80px;}
+.product-gallery{display:flex;flex-direction:column;gap:16px;}
+.main-img{background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:20px;height:420px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.main-img::before{content:'';position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(255,69,0,.12),transparent 70%);border-radius:50%;pointer-events:none;}
+.main-img img{width:100%;height:100%;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 20px 40px rgba(255,69,0,.3));animation:float 5s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-15px) rotate(3deg)}}
+.thumb-row{display:flex;gap:10px;}
+.thumb{background:#18181c;border:2px solid rgba(255,255,255,.07);border-radius:12px;width:80px;height:80px;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:pointer;transition:.2s;}
+.thumb:hover,.thumb.active{border-color:#ff4500;}
+.thumb img{width:100%;height:100%;object-fit:contain;}
+.badge-row{display:flex;gap:8px;margin-bottom:14px;}.badge{padding:4px 12px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;}.badge-sale{background:#ff4500;color:#fff;}.badge-stock{background:#00b06e;color:#fff;}.badge-rating{background:rgba(255,180,0,.1);color:#ffb400;border:1px solid rgba(255,180,0,.2);}
+.prod-brand{font-size:.72rem;color:#ff4500;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;}
+.prod-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:1px;color:#fff;line-height:1.1;margin-bottom:14px;}
+.prod-stars{display:flex;align-items:center;gap:10px;margin-bottom:20px;}.stars{color:#ffb400;font-size:.9rem;}.review-count{font-size:.82rem;color:#6b6b75;}
+.prod-price-row{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;}.prod-price{font-size:2.2rem;font-weight:700;color:#fff;}.prod-price-old{font-size:1.1rem;color:#6b6b75;text-decoration:line-through;}.prod-discount{background:rgba(255,69,0,.1);color:#ff4500;border:1px solid rgba(255,69,0,.2);padding:4px 10px;border-radius:20px;font-size:.78rem;font-weight:700;}
+.prod-desc{color:#6b6b75;font-size:.95rem;line-height:1.8;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,.07);padding-bottom:28px;}
+.option-label{font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:10px;}
+.color-row{display:flex;gap:10px;margin-bottom:22px;}.color-dot{width:32px;height:32px;border-radius:50%;cursor:pointer;transition:.2s;border:3px solid transparent;}.color-dot:hover,.color-dot.active{border-color:#fff;transform:scale(1.1);}
+.qty-row{display:flex;align-items:center;gap:12px;margin-bottom:28px;}.qty-btn{width:36px;height:36px;background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;color:#ede9e0;transition:.2s;}.qty-btn:hover{border-color:#ff4500;color:#ff4500;}.qty-val{font-size:1.1rem;font-weight:600;min-width:32px;text-align:center;}
+.action-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}.wish-big{width:52px;height:52px;background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;font-size:1.1rem;color:#6b6b75;}.wish-big:hover,.wish-big.on{color:#e6006e;border-color:#e6006e;}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}.spec-item{background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px 14px;}.spec-key{font-size:.7rem;color:#6b6b75;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}.spec-val{font-size:.88rem;font-weight:600;color:#fff;}
+.reviews-section{padding:60px 0;border-top:1px solid rgba(255,255,255,.07);}.reviews-section h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:1px;margin-bottom:30px;}.review-card{background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;margin-bottom:16px;}.review-header{display:flex;align-items:center;gap:14px;margin-bottom:12px;}.reviewer-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;background:linear-gradient(135deg,#ff4500,#ff7a1a);}.reviewer-name{font-weight:600;font-size:.92rem;}.reviewer-date{font-size:.75rem;color:#6b6b75;margin-top:2px;}.review-stars{margin-left:auto;color:#ffb400;font-size:.85rem;}.review-text{color:#6b6b75;font-size:.9rem;line-height:1.75;}
+.related-section{padding:60px 0;border-top:1px solid rgba(255,255,255,.07);}.related-section h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:1px;margin-bottom:30px;}.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;}.rel-pro{background:#18181c;border:1px solid rgba(255,255,255,.07);border-radius:16px;overflow:hidden;cursor:pointer;transition:all .3s;}.rel-pro:hover{border-color:rgba(255,69,0,.3);transform:translateY(-4px);}.rel-img{background:#111113;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;}.rel-img img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(0,0,0,.5));transition:transform .3s;}.rel-pro:hover .rel-img img{transform:scale(1.08);}.rel-info{padding:12px;}.rel-brand{font-size:.65rem;color:#ff4500;font-weight:600;text-transform:uppercase;letter-spacing:1px;}.rel-name{font-size:.88rem;font-weight:600;color:#fff;margin:4px 0 5px;}.rel-foot{display:flex;align-items:center;justify-content:space-between;padding:0 12px 12px;}.rel-price{font-size:.95rem;font-weight:700;color:#fff;}.cart-btn-sm{width:32px;height:32px;background:#ff4500;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.78rem;border:none;cursor:pointer;transition:.25s;}.cart-btn-sm:hover{background:#ff7a1a;transform:scale(1.1);}
+@media(max-width:1024px){.product-detail{grid-template-columns:1fr;gap:30px;}.spec-grid{grid-template-columns:1fr;}}</style>
+</head><body><header id="header">
+    <a href="home.html" class="logo"><div class="logo-mark">🎧</div><div class="logo-text">Jam<span>Zon</span></div></a>
+    <nav><ul id="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <div class="header-right">
+        <div class="search-bar"><i class="fas fa-search"></i><input type="text" placeholder="Search audio gear…"/></div>
+        <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></a>
+        <div class="ham" id="ham"><span></span><span></span><span></span></div>
+    </div>
+</header>
+<div class="mob-menu" id="mobMenu"><button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+<a href="home.html">Home</a><a href="shop.html">Shop</a><a href="download.html">Download</a>
+<a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a></div>
+<div class="container">
+<div class="breadcrumb"><a href="home.html">Home</a><i class="fas fa-chevron-right" style="font-size:.6rem"></i><a href="shop.html">Shop</a><i class="fas fa-chevron-right" style="font-size:.6rem"></i><span id="breadProduct">Product</span></div>
+<div class="product-detail">
+    <div class="product-gallery">
+        <div class="main-img">
+            <img id="mainImg" src="../assets/images/headset12-removebg-preview.png" alt="Product" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div class="thumb-row">
+            <div class="thumb active" data-img="../assets/images/headset12-removebg-preview.png">
+                <img src="../assets/images/headset12-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+            <div class="thumb" data-img="../assets/images/headset13-removebg-preview.png">
+                <img src="../assets/images/headset13-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+            <div class="thumb" data-img="../assets/images/headset16-removebg-preview.png">
+                <img src="../assets/images/headset16-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+            <div class="thumb" data-img="../assets/images/headset17-removebg-preview.png">
+                <img src="../assets/images/headset17-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+        </div>
+    </div>
+    <div class="product-info">
+        <div class="badge-row"><span class="badge badge-sale">Sale</span><span class="badge badge-stock">In Stock</span><span class="badge badge-rating">⭐ Top Rated</span></div>
+        <div class="prod-brand">JamZon Audio</div>
+        <h1 class="prod-name" id="prodName">JamZon F11 Pro</h1>
+        <div class="prod-stars"><span class="stars">★★★★⭐</span><span class="review-count">4.5 · 284 reviews</span></div>
+        <div class="prod-price-row"><span class="prod-price" id="prodPrice">₹2,499</span><span class="prod-price-old" id="prodOld">₹3,999</span><span class="prod-discount" id="prodDisc">38% OFF</span></div>
+        <p class="prod-desc">Experience premium sound quality with deep bass, crystal-clear mids, and crisp highs. Designed for extended comfort during long gaming sessions or studio work, featuring plush memory foam ear cushions, adjustable headband, and a retractable noise-cancelling microphone.</p>
+        <div class="option-label">Color</div>
+        <div class="color-row"><div class="color-dot active" style="background:#111"></div><div class="color-dot" style="background:#ff4500"></div><div class="color-dot" style="background:#fff"></div><div class="color-dot" style="background:#1e3a8a"></div></div>
+        <div class="option-label">Quantity</div>
+        <div class="qty-row"><div class="qty-btn" id="qtyMinus"><i class="fas fa-minus"></i></div><div class="qty-val" id="qtyVal">1</div><div class="qty-btn" id="qtyPlus"><i class="fas fa-plus"></i></div><span style="font-size:.82rem;color:#6b6b75;margin-left:8px;">12 in stock</span></div>
+        <div class="action-row"><button class="btn" id="addCartBtn" style="flex:1"><i class="fas fa-cart-shopping"></i> Add to Cart</button><button class="btn" style="background:#18181c;color:#ede9e0;border:1px solid rgba(255,255,255,.1);box-shadow:none" onclick="window.location.href='cart.html'"><i class="fas fa-bolt"></i> Buy Now</button><button class="wish-big" id="wishBig"><i class="far fa-heart"></i></button></div>
+        <div class="spec-grid">
+            <div class="spec-item"><div class="spec-key">Driver Size</div><div class="spec-val">40mm Dynamic</div></div>
+            <div class="spec-item"><div class="spec-key">Frequency</div><div class="spec-val">20Hz – 20kHz</div></div>
+            <div class="spec-item"><div class="spec-key">Connectivity</div><div class="spec-val">Bluetooth 5.3</div></div>
+            <div class="spec-item"><div class="spec-key">Battery Life</div><div class="spec-val">70 Hours</div></div>
+            <div class="spec-item"><div class="spec-key">Charging</div><div class="spec-val">USB-C Rapid</div></div>
+            <div class="spec-item"><div class="spec-key">Weight</div><div class="spec-val">265g</div></div>
+            <div class="spec-item"><div class="spec-key">Noise Cancel</div><div class="spec-val">Active ANC -35dB</div></div>
+            <div class="spec-item"><div class="spec-key">Warranty</div><div class="spec-val">2 Years</div></div>
+        </div>
+    </div>
+</div>
+<div class="reviews-section">
+    <h3>Customer Reviews</h3>
+    <div class="review-card"><div class="review-header"><div class="reviewer-avatar">R</div><div><div class="reviewer-name">Rahul S.</div><div class="reviewer-date">March 2025</div></div><div class="review-stars">★★★★★</div></div><p class="review-text">Absolutely love these headphones! Deep bass, crystal-clear mids, ANC works perfectly on the metro. Battery lasted 3 full days. Worth every rupee.</p></div>
+    <div class="review-card"><div class="review-header"><div class="reviewer-avatar" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">P</div><div><div class="reviewer-name">Priya K.</div><div class="reviewer-date">February 2025</div></div><div class="review-stars">★★★★⭐</div></div><p class="review-text">Great for gaming! The surround sound is impressive and mic quality is clear. Ear pads get slightly warm after 3+ hours but overall a solid buy.</p></div>
+    <div class="review-card"><div class="review-header"><div class="reviewer-avatar" style="background:linear-gradient(135deg,#00b06e,#059669)">A</div><div><div class="reviewer-name">Arjun M.</div><div class="reviewer-date">January 2025</div></div><div class="review-stars">★★★★★</div></div><p class="review-text">Best headphones in this price range. Build quality feels premium, foldable design makes it super portable. JamZon nailed it!</p></div>
+</div>
+<div class="related-section">
+    <h3>You May Also Like</h3>
+    <div class="rel-grid">
+        <div class="rel-pro" onclick="location.href='product.html?img=../assets/images/headset16-removebg-preview.png&name=JamZon F11-25 Ultra&price=4199'"><div class="rel-img"><img src="../assets/images/headset16-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;"></div><div class="rel-info"><div class="rel-brand">JamZon</div><div class="rel-name">F11-25 Ultra</div></div><div class="rel-foot"><span class="rel-price">₹4,199</span><button class="cart-btn-sm add-to-cart" data-name="JamZon F11-25 Ultra" data-price="4199" data-img="../assets/images/headset16-removebg-preview.png" onclick="event.stopPropagation()"><i class="fas fa-cart-shopping"></i></button></div></div>
+        <div class="rel-pro" onclick="location.href='product.html?img=../assets/images/headset13-removebg-preview.png&name=JamZon F11-25 Pro&price=3299'"><div class="rel-img"><img src="../assets/images/headset13-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;"></div><div class="rel-info"><div class="rel-brand">JamZon</div><div class="rel-name">F11-25 Pro</div></div><div class="rel-foot"><span class="rel-price">₹3,299</span><button class="cart-btn-sm add-to-cart" data-name="JamZon F11-25 Pro" data-price="3299" data-img="../assets/images/headset13-removebg-preview.png" onclick="event.stopPropagation()"><i class="fas fa-cart-shopping"></i></button></div></div>
+        <div class="rel-pro" onclick="location.href='product.html?img=../assets/images/headset17-removebg-preview.png&name=JamZon F11-25 Max&price=3799'"><div class="rel-img"><img src="../assets/images/headset17-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;"></div><div class="rel-info"><div class="rel-brand">JamZon</div><div class="rel-name">F11-25 Max</div></div><div class="rel-foot"><span class="rel-price">₹3,799</span><button class="cart-btn-sm add-to-cart" data-name="JamZon F11-25 Max" data-price="3799" data-img="../assets/images/headset17-removebg-preview.png" onclick="event.stopPropagation()"><i class="fas fa-cart-shopping"></i></button></div></div>
+        <div class="rel-pro" onclick="location.href='product.html?img=../assets/images/d1-removebg-preview.png&name=JamZon F11-25 Pro Max&price=5499'"><div class="rel-img"><img src="../assets/images/d1-removebg-preview.png" alt="" style="width:100%;height:100%;object-fit:contain;"></div><div class="rel-info"><div class="rel-brand">JamZon</div><div class="rel-name">F11-25 Pro Max</div></div><div class="rel-foot"><span class="rel-price">₹5,499</span><button class="cart-btn-sm add-to-cart" data-name="JamZon F11-25 Pro Max" data-price="5499" data-img="../assets/images/d1-removebg-preview.png" onclick="event.stopPropagation()"><i class="fas fa-cart-shopping"></i></button></div></div>
+    </div>
+</div>
+</div>
+<footer id="footer"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><div class="logo-mark">🎧</div><div class="logo-text">Jam<span>Zon</span></div></div>
+    <p>Premium audio gear engineered for gamers, creators, and everyday listeners.</p>
+    <div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-discord"></i></a></div></div>
+    <div class="footer-col"><h3>Shop</h3><ul><li><a href="shop.html">Gaming Headsets</a></li><li><a href="shop.html">Wireless</a></li><li><a href="shop.html">Studio</a></li><li><a href="shop.html">Earbuds</a></li></ul></div>
+    <div class="footer-col"><h3>Support</h3><ul><li><a href="#">Track Order</a></li><li><a href="#">Returns</a></li><li><a href="download.html">Downloads</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div class="footer-col"><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms</a></li></ul></div>
+</div><div class="copyright"><p>© 2025 JamZon. All rights reserved. Made with ❤️ in Bangalore.</p><p><a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></p></div></div></footer>
+<div class="toast-wrap" id="toastWrap"></div><script>
+const params=new URLSearchParams(location.search);
+const pName=params.get('name')||'JamZon F11 Pro';
+const pImg=params.get('img')||'../assets/images/headset12-removebg-preview.png';
+const rawPrice=parseInt((params.get('price')||'2499').replace(/[^0-9]/g,''))||2499;
+document.getElementById('prodName').textContent=pName;
+document.getElementById('breadProduct').textContent=pName;
+document.getElementById('mainImg').src=pImg;
+document.getElementById('prodPrice').textContent='₹'+rawPrice.toLocaleString('en-IN');
+const oldP=Math.round(rawPrice*1.45);
+document.getElementById('prodOld').textContent='₹'+oldP.toLocaleString('en-IN');
+document.getElementById('prodDisc').textContent=Math.round((1-rawPrice/oldP)*100)+'% OFF';
+let qty=1;
+document.getElementById('qtyMinus').onclick=()=>{if(qty>1){qty--;document.getElementById('qtyVal').textContent=qty;}};
+document.getElementById('qtyPlus').onclick=()=>{qty++;document.getElementById('qtyVal').textContent=qty;};
+document.getElementById('wishBig').addEventListener('click',function(){this.classList.toggle('on');this.innerHTML=this.classList.contains('on')?'<i class="fas fa-heart"></i>':'<i class="far fa-heart"></i>';});
+document.querySelectorAll('.thumb').forEach(t=>{t.addEventListener('click',()=>{document.querySelectorAll('.thumb').forEach(x=>x.classList.remove('active'));t.classList.add('active');document.getElementById('mainImg').src=t.dataset.img;});});
+document.querySelectorAll('.color-dot').forEach(d=>{d.addEventListener('click',()=>{document.querySelectorAll('.color-dot').forEach(x=>x.classList.remove('active'));d.classList.add('active');});});
+function getCart(){try{return JSON.parse(localStorage.getItem('jamzon_cart'))||[];}catch{return[];}}
+function saveCart(c){localStorage.setItem('jamzon_cart',JSON.stringify(c));}
+function updateBadge(){document.getElementById('cartCount').textContent=getCart().reduce((s,i)=>s+(i.qty||1),0);}
+function toast(msg){const w=document.getElementById('toastWrap'),t=document.createElement('div');t.className='toast';t.innerHTML='<i class="fas fa-check-circle"></i> '+msg;w.appendChild(t);setTimeout(()=>t.remove(),3100);}
+document.getElementById('addCartBtn').addEventListener('click',()=>{let c=getCart();const ex=c.find(i=>i.name===pName);if(ex)ex.qty=(ex.qty||1)+qty;else c.push({name:pName,price:rawPrice,img:pImg,qty});saveCart(c);updateBadge();toast(pName+' added to cart!');});
+document.querySelectorAll('.add-to-cart').forEach(btn=>{btn.addEventListener('click',e=>{e.stopPropagation();const{name,price,img}=btn.dataset;let c=getCart();const ex=c.find(i=>i.name===name);if(ex)ex.qty=(ex.qty||1)+1;else c.push({name,price:parseFloat(price),img,qty:1});saveCart(c);updateBadge();toast(name+' added!');});});
+updateBadge();
+document.getElementById('ham').addEventListener('click',()=>document.getElementById('mobMenu').classList.add('open'));
+document.getElementById('mobClose').addEventListener('click',()=>document.getElementById('mobMenu').classList.remove('open'));
+</script></body></html>

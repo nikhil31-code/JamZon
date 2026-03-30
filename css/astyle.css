@@ -1,0 +1,452 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: linear-gradient(90deg, #8c52ff, #ff3c1a);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#header img {
+  transition: transform 0.3s ease;
+}
+#header img:hover {
+  transform: scale(1.05);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 24px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+#navbar a:hover {
+  color: #ffe0e0;
+}
+
+#productSearch {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== PAGE HEADER ===== */
+.about-header {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #7f8ee2, #a785f2);
+  color: #fff;
+  position: relative;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.about-header p {
+  font-size: 1.2rem;
+}
+
+.to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  color: #7f8ee2;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.to-top:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== ABOUT SECTION ===== */
+#about-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+#about-head img {
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#about-head div {
+  max-width: 550px;
+}
+
+#about-head h2 {
+  font-size: 2rem;
+  color: #7f8ee2;
+  margin-bottom: 15px;
+}
+
+#about-head p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #1a1919;
+}
+
+marquee {
+  background: #ff3c1a;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* ===== APP SECTION ===== */
+#about-app {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f6f7fa;
+}
+
+#about-app h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about-app a {
+  color: #ff3c1a;
+  text-decoration: none;
+}
+
+.video video {
+  width: 70%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== TEAM SECTION ===== */
+#team {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+#team h2 {
+  font-size: 2rem;
+  color: #7f8ee2;
+  margin-bottom: 30px;
+}
+
+.image-gallery img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 60px 40px;
+  background: linear-gradient(90deg, #7f8ee2, #a785f2);
+  color: #f6f7fa;
+  border-radius: 18px 18px 0 0;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+footer h4 {
+  margin-bottom: 12px;
+  color: #ff3c1a;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  color: #f6f7fa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ffdfcc;
+}
+
+footer .icon a {
+  color: #f6f7fa;
+  margin-right: 12px;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+footer .icon a:hover {
+  color: #ffdfcc;
+}
+
+footer .copyright {
+  margin-top: 30px;
+  text-align: center;
+  color: #dfd9d9;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+  }
+
+  .video video {
+    width: 100%;
+  }
+}
+
+/* ====== CART PAGE ====== */
+
+body {
+  background: linear-gradient(135deg, #140030, #2a004f);
+  color: #dcdfe8;
+  font-family: "Poppins", sans-serif;
+}
+
+#cart {
+  width: 90%;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== TABLE STYLES ====== */
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  color: #fff;
+}
+
+#cart table img {
+  width: 70px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#cart table img:hover {
+  transform: scale(1.08);
+}
+
+#cart table td,
+#cart table th {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#cart table thead {
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 18px 0px;
+  color: #9ee1e4;
+}
+
+#cart table tbody tr {
+  transition: background 0.3s ease;
+}
+
+#cart table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#cart table tbody td {
+  font-size: 15px;
+  color: #e5e5ff;
+}
+
+#cart table td:nth-child(5) input {
+  width: 60px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #9ee1e4;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  text-align: center;
+}
+
+/* ====== ADDITIONAL SECTIONS ====== */
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+#coupon,
+#subtotal {
+  flex: 1;
+  min-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== COUPON SECTION ====== */
+
+#coupon h3 {
+  color: #9ee1e4;
+  margin-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #9ee1e4;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+#coupon button {
+  background: linear-gradient(90deg, #7f8ee2, #9ee1e4);
+  color: #1a0033;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#coupon button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #9ee1e4, #7f8ee2);
+}
+
+/* ====== SUBTOTAL SECTION ====== */
+
+#subtotal h3 {
+  color: #9ee1e4;
+  margin-bottom: 15px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  font-size: 14px;
+}
+
+#subtotal button {
+  background: linear-gradient(90deg, #7f8ee2, #9ee1e4);
+  color: #1a0033;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#subtotal button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #9ee1e4, #7f8ee2);
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+@media (max-width: 768px) {
+  #cart {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #cart-add {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #coupon input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #coupon button {
+    width: 100%;
+  }
+}
+

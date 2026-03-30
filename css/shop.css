@@ -1,0 +1,127 @@
+body {
+  background-color: #0b001a;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #12002f;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navbar {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  color: #ff4df0;
+}
+
+/* Hero */
+#page-header {
+  background: linear-gradient(90deg, #1a0033, #4b0082);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#page-header h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#page-header p {
+  color: #ccc;
+}
+
+/* Products */
+.section-p1 {
+  padding: 60px 80px;
+}
+
+.pro-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.pro {
+  background: #1c0036;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.pro img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.pro:hover {
+  transform: scale(1.05);
+}
+
+.des span {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.des h5 {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.star i {
+  color: #ff4df0;
+}
+
+.pro h4 {
+  margin-top: 10px;
+  color: #00ffcc;
+}
+
+.cart {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #ff4df0;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.cart:hover {
+  background: #00ffcc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #12002f;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
